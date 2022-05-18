@@ -1,8 +1,8 @@
 # AIS SOFTWARE DECODER
 
-## Firstly, connecting to the ais channels and receiving data
+## Connecting to the ais channels and receiving data
 
-1. First solution : [rtl_ais](https://github.com/dgiardini/rtl-ais)
+### 1. First solution : [rtl_ais](https://github.com/dgiardini/rtl-ais)
 
 > rtl-ais is a simple command-line utility that does the complex job of interfacing with an RTL-SDR dongle and decoding AIS data, providing it on as the standard NMEA-0183 format.
 
@@ -30,20 +30,21 @@ On a second :
 	nc 127.0.0.1 10110
 ```
 
-2. Second solution : [AIS-Catcher](https://github.com/jvde-github/AIS-catcher)
+
+### 2. Second solution : AIS-Catcher
 
 
-* INSTALLATION : voir le lien ci-dessus pour les instructions  :grin:
+* INSTALLATION : Click [here](https://github.com/jvde-github/AIS-catcher)
 
 * ADVANTAGE : 
-	- Simple to use, only one terminal needed
+	- Simple to use, only one terminal needed, might be longer to install
 	
 * HOW TO USE : 
 
 ```
 	AIS-catcher -v -u 127.0.0.1 10110
 ```
-Exemple de sortie : 
+Output example : 
 
 
 	[AIS engine v0.35]:                      1 msgs at 0 msg/s
