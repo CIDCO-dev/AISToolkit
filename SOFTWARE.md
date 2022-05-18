@@ -1,7 +1,6 @@
-# Software pour décoder AIS 
+# AIS SOFTWARE DECODER
 
-
-Antenna :  ~368 cm
+## Firstly, connecting to the ais channels and receiving data
 
 1. First solution : [rtl_ais](https://github.com/dgiardini/rtl-ais)
 
@@ -18,14 +17,16 @@ Antenna :  ~368 cm
 ```
 
 * HOW TO USE : 
-```
 
 On a first terminal : 
 
+```
 	 ./rtl_ais -n -T
-	 
+```	 
+
 On a second : 
 
+```
 	nc 127.0.0.1 10110
 ```
 
@@ -34,13 +35,14 @@ On a second :
 
 * INSTALLATION : voir le lien ci-dessus pour les instructions  :grin:
 
-* Avantages : 
-	- Plus simple à utiliser, une seule ligne pour le lancer et une seule fenêtre cmd nécessaire
+* ADVANTAGE : 
+	- Simple to use, only one terminal needed
 	
-* UTILISATION : 
+* HOW TO USE : 
 
+```
 	AIS-catcher -v -u 127.0.0.1 10110
-
+```
 Exemple de sortie : 
 
 
