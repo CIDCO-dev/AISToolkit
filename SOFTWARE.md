@@ -1,33 +1,35 @@
 # Software pour décoder AIS 
 
 
-Antenne utilisé : env. 368 cm (2 longueurs d'onde)
+Antenna :  ~368 cm
 
-1. [rtl_ais](https://github.com/dgiardini/rtl-ais)
+1. First solution : [rtl_ais](https://github.com/dgiardini/rtl-ais)
 
-rtl-ais is a simple command-line utility that does the complex job of interfacing with an RTL-SDR dongle and decoding AIS data, providing it on as the standard NMEA-0183 format.
+> rtl-ais is a simple command-line utility that does the complex job of interfacing with an RTL-SDR dongle and decoding AIS data, providing it on as the standard NMEA-0183 format.
 
 * INSTALLATION  :
-
+```
 	sudo apt-get install librtlsdr-dev
 	sudo apt-get install libusb-dev
 	git clone https://github.com/dgiardini/rtl-ais
 	cd rtl-ais
 	make
 	./rtl_ais
+```
 
-* UTILISATION : 
+* HOW TO USE : 
+```
 
-Sur un premier terminal : 
+On a first terminal : 
 
 	 ./rtl_ais -n -T
 	 
-Sur un second : 
+On a second : 
 
 	nc 127.0.0.1 10110
+```
 
-
-2. [AIS-Catcher](https://github.com/jvde-github/AIS-catcher)
+2. Second solution : [AIS-Catcher](https://github.com/jvde-github/AIS-catcher)
 
 
 * INSTALLATION : voir le lien ci-dessus pour les instructions  :grin:
@@ -37,9 +39,7 @@ Sur un second :
 	
 * UTILISATION : 
 
-
-	 AIS-catcher -v -u 127.0.0.1 10110
-
+	AIS-catcher -v -u 127.0.0.1 10110
 
 Exemple de sortie : 
 
