@@ -33,7 +33,7 @@ Description=Launch rtl-ais on boot.
 # After=gpsd.service hwrtc.service pt a changer pour le faire launch apres le service reseau
 [Service]
 Type=simple
-ExecStart=/home/ubuntu/AISToolkit/launchROSService.sh
+ExecStart=/home/ubuntu/AISToolkit/launch.sh
 [Install]
 WantedBy=multi-user.target
 EOF'
