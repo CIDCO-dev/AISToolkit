@@ -5,5 +5,5 @@
 #Launch execution script
 
 
-/home/ubuntu/rtl-ais/rtl_ais -n -T
+sudo /home/ubuntu/rtl-ais/rtl_ais -n -T
 
