@@ -15,11 +15,11 @@ echo "[+] Updating applications"
 sudo apt upgrade -y | tee -a log.txt
 
 echo "[+] Installing packages..."
-sudo apt install -y librtlsdr-dev libusb-dev libpthread-stubs0-dev ncat
+sudo apt install -y librtlsdr-dev libusb-dev libpthread-stubs0-dev ncat make pkg-config build-essential
 
 echo "[+] Cloning git repository"
 git clone https://github.com/dgiardini/rtl-ais
 
-cd home/Ubuntu/rtl-ais
+cd home/ubuntu/rtl-ais
 make
-
+cd ..
