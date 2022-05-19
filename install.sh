@@ -24,4 +24,4 @@ git clone https://github.com/dgiardini/rtl-ais
 
 cd /home/ubuntu/rtl-ais
 make
-cd..
+cd ..
