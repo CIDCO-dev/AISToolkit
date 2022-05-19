@@ -25,3 +25,19 @@ cd /home/ubuntu/rtl-ais
 echo "[+] Building..."
 make | tee -a log.txt
 cd ..
+
+echo "[+] Adding rtl-ais on boot"
+sudo bash -c 'cat << EOF > /etc/systemd/system/rtl-ais.service
+[Unit]
+Description=Launch rtl-ais on boot.
+# After=gpsd.service hwrtc.service pt a changer pour le faire launch apres le service reseau
+[Service]
+Type=simple
+ExecStart=/home/ubuntu/AISToolkit/launchROSService.sh
+[Install]
+WantedBy=multi-user.target
+EOF'
+
+sudo chmod 755 /etc/systemd/system/rtl-ais.service
+sudo systemctl enable rtl-ais
+echo "sudo systemctl start rtl-ais"
