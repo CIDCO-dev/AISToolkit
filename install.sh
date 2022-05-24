@@ -15,10 +15,11 @@ echo "[+] Updating applications"
 sudo apt upgrade -y | tee -a log.txt
 
 echo "[+] Installing packages..."
-sudo apt install -y librtlsdr-dev libusb-dev libpthread-stubs0-dev ncat make pkg-config build-essential | tee -a log.txt
-sudo apt install wget https://www.aishub.net/downloads/dispatcher/install_dispatcher
+sudo apt install -y librtlsdr-dev libusb-dev libpthread-stubs0-dev ncat make pkg-config build-essential aha | tee -a log.txt
+cd /home/ubuntu
+wget https://www.aishub.net/downloads/dispatcher/install_dispatcher
 chmod 755 install_dispatcher
-sudo ./install_dispatcher -Y
+sudo ./install_dispatcher
 
 
 echo "[+] Cloning git repository"
