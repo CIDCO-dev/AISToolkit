@@ -16,6 +16,10 @@ sudo apt upgrade -y | tee -a log.txt
 
 echo "[+] Installing packages..."
 sudo apt install -y librtlsdr-dev libusb-dev libpthread-stubs0-dev ncat make pkg-config build-essential | tee -a log.txt
+sudo apt install wget https://www.aishub.net/downloads/dispatcher/install_dispatcher
+chmod 755 install_dispatcher
+sudo ./install_dispatcher -Y
+
 
 echo "[+] Cloning git repository"
 cd /home/ubuntu
@@ -26,7 +30,7 @@ echo "[+] Building..."
 make | tee -a log.txt
 cd ..
 
-echo "[+] Adding rtl-ais on boot"
+echo "[+] Adding service to launch rtl-ais on boot"
 sudo bash -c 'cat << EOF > /etc/systemd/system/rtl-ais.service
 [Unit]
 Description=Launch rtl-ais on boot.
