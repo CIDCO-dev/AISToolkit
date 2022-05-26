@@ -33,7 +33,7 @@ Description=Launch rtl-ais on boot.
 # After=gpsd.service hwrtc.service pt a changer pour le faire launch apres le service reseau
 [Service]
 Type=simple
-ExecStart=/home/ubuntu/AISToolKit/launch.sh
+ExecStart=/home/ubuntu/AISToolkit/launch.sh
 [Install]
 WantedBy=multi-user.target
 EOF'
@@ -52,17 +52,18 @@ wget https://www.aishub.net/downloads/dispatcher/install_dispatcher
 chmod 755 install_dispatcher
 sudo ./install_dispatcher
 
-echo "[+] Adding service to launch aisdispatcher on boot"
-sudo bash -c 'cat << EOF2 > /etc/systemd/system/aisdispatcher.service
- [Unit]
-Description=aisdispatcher
-After=rtl-ais.service syslog.target network-online.target
-[Service]
-Type=simple
-ExecStart=/usr/local/bin/aisdispatcher -u -h localhost -p 10110 -H localhost:10111 
-[Install]
-WantedBy=multi-user.target
-EOF2'
+#echo "[+] Adding service to launch aisdispatcher on boot"
+#sudo bash -c 'cat << EOF2 > /etc/systemd/system/aisdispatcher.service
+#[Unit]
+#Description=aisdispatcher
+#After=rtl-ais.service syslog.target network-online.target
+#[Service]
+#Type=simple
+#ExecStart=/home/ais/bin/aisdispatcher -u -h localhost -p 10110 -H localhost:10111 
+#[Install]
+#WantedBy=multi-user.target
+#EOF2'
+#.
 
 sudo chmod 755 /etc/systemd/system/aisdispatcher.service
 sudo systemctl daemon-reload
