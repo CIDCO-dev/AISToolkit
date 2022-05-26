@@ -83,7 +83,7 @@ Description=PythonScript
 After=aisdispatcher.service
 [Service]
 Type=simple
-ExecStart=/home/ubuntu/bin/AISToolkit python3 to_ais.py cidco.ca aisuser AisOuananiche314151! ais 127.0.0.1 10110 
+ExecStart=/home/ubuntu/AISToolkit python3 to_ais.py cidco.ca aisuser AisOuananiche314151! ais 127.0.0.1 10110 
 [Install]
 WantedBy=multi-user.target
 EOF3'
