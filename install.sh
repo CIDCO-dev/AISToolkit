@@ -59,7 +59,7 @@ Description=aisdispatcher
 After=rtl-ais.service
 [Service]
 Type=simple
-ExecStart=/home/ais/bin/aisdispatcher_armv8_a72 -m udp-server -d 144.76.105.244:2328 -h 127.0.0.1 -p 10110 -s 192.168.1.177 
+ExecStart="/home/ais/bin/aisdispatcher_armv8_a72 -m udp-server -d 144.76.105.244:2328 -h 127.0.0.1 -p 10110 -s 192.168.1.177" 
 ##### -s = source id, pas sur de la valeur
 [Install]
 WantedBy=multi-user.target
@@ -83,7 +83,7 @@ Description=PythonScript
 After=aisdispatcher.service
 [Service]
 Type=simple
-ExecStart=/home/ubuntu/AISToolkit python3 to_ais.py cidco.ca aisuser AisOuananiche314151! ais 127.0.0.1 10110 
+ExecStart="/home/ubuntu/AISToolkit python3 to_ais.py cidco.ca aisuser AisOuananiche314151! ais 127.0.0.1 10110" 
 [Install]
 WantedBy=multi-user.target
 EOF3'
