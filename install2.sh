@@ -30,10 +30,6 @@ make
 sudo make install
 
 
-echo "[+] Building..."
-make | tee -a log.txt
-cd ..
-
 #echo "[+] Adding service to launch rtl-ais on boot"
 #sudo bash -c 'cat << EOF > /etc/systemd/system/rtl-ais.service
 #[Unit]
@@ -80,11 +76,10 @@ echo "[+] Adding service to launch aisdispatcher on boot"
 sudo bash -c 'cat << EOF2 > /etc/systemd/system/aisdispatcher.service
 [Unit]
 Description=aisdispatcher
-After=rtl-ais.service
+After=AIS-catcher.service
 [Service]
 Type=simple
 ExecStart="/home/ais/bin/aisdispatcher_armv8_a72 -m udp-server -d 144.76.105.244:2328 -h 127.0.0.1 -p 10110 -s 192.168.1.177" 
-##### -s = source id, pas sur de la valeur
 [Install]
 WantedBy=multi-user.target
 EOF2'
