@@ -13,7 +13,7 @@ from shapely import geometry
 from datetime import datetime
 import time
 from pyais import FileReaderStream
-from pyais.stream import TCPConnection
+from pyais.stream import UDPReceiver
 import sys
 import os
 
@@ -243,8 +243,9 @@ def decodeFromFile(arg_host, arg_user, arg_password, arg_database, arg_filename)
         # closing()
 
 def listenPort(arg_host, arg_user, arg_password, arg_database,url,port):
-    for msg in TCPConnection(url, port=int(port)):
-        print(msg)
+    for msg in UDPReceiver(url,  int(port)):
+       # print(msg)
+        print(msg.decode())
         msg_decoded = msg.decode()
         to_DB(arg_host, arg_user, arg_password, arg_database,msg_decoded)
 
@@ -305,7 +306,4 @@ if len(sys.argv) == 7:
 else:
     print (len(sys.argv))
     help()  # not the right amount of argument
-
-if __name__ == '__main__':
-    listenPort("cidco.ca",  "aisuser", "AisOuananiche314151!", "ais", "127.0.0.1",10110)
 

@@ -12,18 +12,20 @@ Help()
    echo
    echo "Syntax: install_ais_catcher.sh  [options]"
    echo "options:"
-   echo "[help or h]      Print this Help."    
-   echo "[rtl_ip]         ip address of the Raspberry pi (host)."
-   echo "[rtl_port]       Port of the Raspberry pi (host)."
-   echo "[DB_host]  	  Database Host."
-   echo "[DB_user]	  Database user."
-   echo "[DB_pswd]        Database password."
-   echo "[DB_name]        Database name."
+   echo "[help or h]        Print this Help."    
+   echo "[ais_ip]           ip address of the Raspberry pi (host)."
+   echo "[ais_port]         Port of the Raspberry pi (host)."
+   echo "[DB_host]  	    Database Host."
+   echo "[DB_user]	    Database user."
+   echo "[DB_pswd]          Database password."
+   echo "[DB_name]          Database name."
+   echo "[dispatcher_ip]    Dispatcher server ip"
+   echo "[dispatcher_port]  Dispatcher port "
    echo
    echo "Command line exemple." 
    echo "install_rtl_ais.sh -help"
-   echo "install_rtl_ais.sh rtl_ip rtl_port DB_host DB_user DB_pswd DB_name"
-   echo "install_rtl_ais.sh '192.168.1.100' '10110' 'cidco.ca' 'ais_usr' 'ais_pswd' 'ais_db'"
+   echo "install_rtl_ais.sh rtl_ip rtl_port DB_host DB_user DB_pswd DB_name dispatcher_ip dispatcher_port"
+   echo "install_rtl_ais.sh '192.168.1.100' '2233' 'cidco.ca' 'ais_usr' 'ais_pswd' 'ais_db' '192.168.1.101' '2233'"
 }
 
 if [ -z "$1" ] || [ "$1" = 'h' ] || [ "$1" = '-h' ] || [ "$1" = 'help' ] || [ "$1" = '-help' ]
@@ -32,27 +34,30 @@ then
   exit
 
 else 
-  rtl_ip=$1
-  rtl_port=$2
+  ais_ip=$1
+  ais_port=$2
   db_host=$3
   db_usr=$4
   db_pswd=$5
   db_name=$6
-  if [ ! -z "$rtl_ip" ] && [ ! -z "$rtl_port" ] && [ ! -z "$db_host" ] && [ ! -z "$db_usr" ] && [ ! -z "$db_pswd" ] && [ ! -z "$db_name" ]
+  dispatcher_ip=$7
+  dispatcher_port=$8
+
+  if [ ! -z "$ais_ip" ] && [ ! -z "$ais_port" ] && [ ! -z "$db_host" ] && [ ! -z "$db_usr" ] && [ ! -z "$db_pswd" ] && [ ! -z "$db_name" ] && [ ! -z "$dispatcher_ip" ] && [ ! -z "$dispatcher_port" ]
   then
     echo "<*> disable auto-update"
     sudo systemctl stop unattended-upgrades
     echo "[+] Updating repositories"
-    sudo apt update | tee log.txt
+    sudo apt update | tee ~/log.txt
     echo "[+] Updating base system"
-    sudo apt dist-upgrade -y | tee -a log.txt
+    sudo apt dist-upgrade -y | tee -a ~/log.txt
     echo "[+] Updating applications"
-    sudo apt upgrade -y | tee -a log.txt
+    sudo apt upgrade -y | tee -a ~/log.txt
     echo "[+] Installing rtl-ais packages..."
-    sudo apt install -y librtlsdr-dev libusb-dev libpthread-stubs0-dev ncat make pkg-config build-essential cmake | tee -a log.txt
+    sudo apt install -y librtlsdr-dev libusb-dev libpthread-stubs0-dev ncat make pkg-config build-essential cmake | tee -a ~/log.txt
     echo "[+] Cloning AIS-catcher git repository"
     cd /home/ubuntu
-    git clone https://github.com/jvde-github/AIS-catcher.git | tee -a log.txt
+    git clone https://github.com/jvde-github/AIS-catcher.git | tee -a ~/log.txt
     cd AIS-catcher
     mkdir build
     cd build
@@ -67,7 +72,7 @@ else
     Description=Launch AIS-catcher on boot.
     [Service]
     Type=simple
-    ExecStart="/usr/local/bin/AIS-catcher -v -u $rtl_ip $rtl_port"
+    ExecStart="/usr/local/bin/AIS-catcher -v -u $ais_ip $ais_port -u $dispatcher_ip $dispatcher_port"
     [Install]
     WantedBy=multi-user.target
     EOF'
@@ -87,7 +92,7 @@ else
 	Before=rtl-ais.service
 	[Service]
 	Type=simple
-	ExecStart=" /bin/python3 /home/ubuntu/AISToolkit/to_ais.py $db_host $db_usr $db_pswd $db_name $rtl_ip $rtl_port" 
+	ExecStart=/bin/python3 /home/ubuntu/AISToolkit/to_ais.py $db_host $db_usr $db_pswd $db_name $ais_ip $ais_port 
 	[Install]
 	WantedBy=multi-user.target
 	EOF2'

@@ -42,17 +42,17 @@ else
     echo "<*> disable auto-update"
     sudo systemctl stop unattended-upgrades
     echo "[+] Updating repositories"
-    sudo apt update | tee log.txt
+    sudo apt update | tee ~/log.txt
     echo "[+] Updating base system"
-    sudo apt dist-upgrade -y | tee -a log.txt
+    sudo apt dist-upgrade -y | tee -a ~/log.txt
     echo "[+] Updating applications"
-    sudo apt upgrade -y | tee -a log.txt
+    sudo apt upgrade -y | tee -a ~/log.txt
     echo "[+] Installing rtl-ais packages..."
-    sudo apt install -y librtlsdr-dev libusb-dev libpthread-stubs0-dev ncat make pkg-config build-essential | tee -a log.txt
+    sudo apt install -y librtlsdr-dev libusb-dev libpthread-stubs0-dev ncat make pkg-config build-essential | tee -a ~/log.txt
     
     echo "[+] Downloading rtl-ais"
     cd ~/
-    git clone https://github.com/dgiardini/rtl-ais | tee -a log.txt
+    git clone https://github.com/dgiardini/rtl-ais | tee -a ~/log.txt
     cd rtl-ais/
     make | tee -a log.txt
     cd ~/
@@ -85,7 +85,7 @@ else
 	Before=rtl-ais.service
 	[Service]
 	Type=simple
-	ExecStart=" /bin/python3 /home/ubuntu/AISToolkit/to_ais.py $db_host $db_usr $db_pswd $db_name $rtl_ip $rtl_port" 
+	ExecStart=/bin/python3 /home/ubuntu/AISToolkit/to_ais.py $db_host $db_usr $db_pswd $db_name $rtl_ip $rtl_port
 	[Install]
 	WantedBy=multi-user.target
 	EOF2'
