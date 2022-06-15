@@ -1,7 +1,7 @@
-# AIS Tool Kit DIY
-## Building the dipole antenna
+# AIS Tool Kit Antenna DIY
+## Building the dipolar antenna
 
-### 1. First of all, why choosing a dipole antenna ?
+### 1. First of all, why choosing a dipolar antenna ?
 
 This type of antenna is the simplest to be made from a theoretical point of view, consisting only of two conductors of egal lengths oriented end-to-end in opposite direction, it can be made anywhere. It is also allows important to note that it's very convenient when deciding of the total lenght of the antenna.
 
@@ -43,7 +43,7 @@ From the hardware store :
 Now that you have all the parts, it's time to build your antenna !
 
 #### 3.1 Strip off the threads
-First, you need to strip off the electrical copper wire (14 gauge) by taking off the isolator. We only needed to buy a 3 feet wire because by striping it you have now 3 conductor !  
+First, you need to strip off the electrical copper wire (14 gauge) by taking off the insulator. We only needed to buy a 3 feet wire because by striping it you have now 3 conductor !  
  
 ![alt text](https://raw.githubusercontent.com/Jacobb13/AISToolkit/main/Hardware/Antenn-DIY/images/20220531_120735.jpg)
 
@@ -57,7 +57,7 @@ Using the following formula, we can calculate the total wavelenght of the radio 
 ```
   
 To have optimal results, we want our dipolar antenna to represents half the lenght of the radio signal lenght. Therefore, exactly 1/4 of λ.  
-Finally, each of the two conductor (branches) of our antenna needs to be : 
+Finally, each of the two conductors (branches) of our antenna needs to be : 
 ```
 λ/4 = 1.85/4 = 0.462m = 46.2cm	
 ```
