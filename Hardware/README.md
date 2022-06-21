@@ -61,8 +61,8 @@ Finally, each of the two conductors (branches) of our antenna needs to be :
 ```
 λ/4 = 1.85/4 = 0.462m = 46.2cm	
 ```
-![alt text](https://raw.githubusercontent.com/Jacobb13/AISToolkit/main/Hardware/Antenn-DIY/images/img2.png)
-![alt text](https://raw.githubusercontent.com/Jacobb13/AISToolkit/main/Hardware/Antenn-DIY/images/img3.png)
+![alt text](https://raw.githubusercontent.com/Jacobb13/AISToolkit/main/Hardware/Antenn-DIY/images/img2%23.png)
+![alt text](https://raw.githubusercontent.com/Jacobb13/AISToolkit/main/Hardware/Antenn-DIY/images/img3%23.png)
 
 #### 3.3 Isolating the conductors with an hard shell (central vacuum pipe)
 
@@ -78,7 +78,7 @@ The pipes are now ready to contain de conductors, and you'll want them to exceed
 ![alt text](https://raw.githubusercontent.com/Jacobb13/AISToolkit/dbb3dfff873a758691bc3026c31fcba4c73a9ab9/Hardware/Antenn-DIY/images/20220531_134439.jpg)
 ![alt text](https://raw.githubusercontent.com/Jacobb13/AISToolkit/dbb3dfff873a758691bc3026c31fcba4c73a9ab9/Hardware/Antenn-DIY/images/20220531_135106.jpg)
 ![alt text](https://raw.githubusercontent.com/Jacobb13/AISToolkit/dbb3dfff873a758691bc3026c31fcba4c73a9ab9/Hardware/Antenn-DIY/images/20220531_135118.jpg)
-![alt text](https://raw.githubusercontent.com/Jacobb13/AISToolkit/main/Hardware/Antenn-DIY/images/img9.png)
+![alt text](https://raw.githubusercontent.com/Jacobb13/AISToolkit/main/Hardware/Antenn-DIY/images/img9%23.png)
 Once the conductors are glued in the pipes, you can now glue the pipes in the T-connector and also the caps on the extremities. **** Yavait aussi un trou de percer à une des extrémités messemble***    
 
 #### 3.4 Last milestone, the T-Connector 
@@ -100,7 +100,7 @@ The inside, should look like this now, but we also added some silicon to prevent
 ![alt text](https://raw.githubusercontent.com/Jacobb13/AISToolkit/dbb3dfff873a758691bc3026c31fcba4c73a9ab9/Hardware/Antenn-DIY/images/20220531_143400.jpg)
 Now the conductor going out needs to be nicely separated in two, like this :  
 
-![alt text](https://raw.githubusercontent.com/Jacobb13/AISToolkit/main/Hardware/Antenn-DIY/images/img19.png))
+![alt text](https://raw.githubusercontent.com/Jacobb13/AISToolkit/main/Hardware/Antenn-DIY/images/img17%23%23.png)
 And you'll need some heat shrink tubes to insulate them. 
 ![alt text](https://raw.githubusercontent.com/Jacobb13/AISToolkit/main/Hardware/Antenn-DIY/images/img18%40%40%40.png)
 
