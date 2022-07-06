@@ -247,8 +247,10 @@ def listenPort(arg_host, arg_user, arg_password, arg_database,url,port):
        # print(msg)
         print(msg.decode())
         msg_decoded = msg.decode()
-        to_DB(arg_host, arg_user, arg_password, arg_database,msg_decoded)
-
+          try:
+            to_DB(arg_host, arg_user, arg_password, arg_database,msg_decoded)
+        except:
+            pass
 
 
 
