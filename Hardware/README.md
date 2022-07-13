@@ -40,7 +40,9 @@ From the hardware store :
 > saw ****
 
 ### 3. Steps to build the antenna
-Now that you have all the parts, it's time to build your antenna !
+Now that you have all the parts, it's time to build your antenna !  
+Here's how it should look at the end :  
+![alt text](https://raw.githubusercontent.com/Jacobb13/AISToolkit/main/Hardware/Antenn-DIY/images/img4.png)  
 
 #### 3.1 Strip off the threads
 First, you need to strip off the electrical copper wire (14 gauge) by taking off the insulator. We only needed to buy a 3 feet wire because by striping it you have now 3 conductor !  
@@ -66,20 +68,17 @@ Finally, each of the two conductors (branches) of our antenna needs to be :
 
 #### 3.3 Isolating the conductors with an hard shell (central vacuum pipe)
 
-For this part, we want to start building the hard shell of our antenna since it will go outside.   
-A picture speaks a thousand words, this is what it's going to look like : 
-![alt text](https://raw.githubusercontent.com/Jacobb13/AISToolkit/main/Hardware/Antenn-DIY/images/img4.png)
-So first, we cut the central vacuum pipes into desired lenghts. Measure 46.5 cm and use a pen to mark the pipe, then we used a saw to cut the pipe. 
+For this part, we want to start building the hard shell of our antenna since it will go outside. So first, we cut the central vacuum pipes into desired lenghts. Measure 46.5 cm and use a pen to mark the pipe, then using an hand saw, cut the pipe. 
 It should look like this, times two.  
 ![alt text](https://raw.githubusercontent.com/Jacobb13/AISToolkit/main/Hardware/Antenn-DIY/images/img5.png)  
 
 Now that you have both hard shells, you glue the conductor inside of it. It is recommended to scrape with sand paper the places where it is going to be glued (helps the glue adhering). For instance, inside of the vacuum pipes and on both extremeties.  
-The pipes are now ready to contain de conductors, and you'll want them to exceed a little bit for the parts that are going to in the middle (in the T connector).  
+The pipes are now ready to contain the conductors, and you'll want them to exceed a little bit (approximatively 1.5cm) for the parts that are going to be in the middle. (the T connector).  
 ![alt text](https://raw.githubusercontent.com/Jacobb13/AISToolkit/dbb3dfff873a758691bc3026c31fcba4c73a9ab9/Hardware/Antenn-DIY/images/20220531_134439.jpg)
 ![alt text](https://raw.githubusercontent.com/Jacobb13/AISToolkit/dbb3dfff873a758691bc3026c31fcba4c73a9ab9/Hardware/Antenn-DIY/images/20220531_135106.jpg)
 ![alt text](https://raw.githubusercontent.com/Jacobb13/AISToolkit/dbb3dfff873a758691bc3026c31fcba4c73a9ab9/Hardware/Antenn-DIY/images/20220531_135118.jpg)
 ![alt text](https://raw.githubusercontent.com/Jacobb13/AISToolkit/main/Hardware/Antenn-DIY/images/img9%23.png)
-Once the conductors are glued in the pipes, you can now glue the pipes in the T-connector and also the caps on the extremities. **** Yavait aussi un trou de percer à une des extrémités messemble***    
+Once the conductors are glued in the pipes, you can now glue the pipes in the T-connector and also the caps on the extremities.   
 
 #### 3.4 Last milestone, the T-Connector 
 
