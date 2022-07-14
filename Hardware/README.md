@@ -74,10 +74,9 @@ It should look like this, times two.
 
 Now that you have both hard shells, you glue the conductor inside of it. It is recommended to scrape with sand paper the places where it is going to be glued (helps the glue adhering). For instance, inside of the vacuum pipes and on both extremeties.  
 The pipes are now ready to contain the conductors, and you'll want them to exceed a little bit (approximatively 1.5cm) for the parts that are going to be in the middle. (the T connector).  
-![alt text](https://raw.githubusercontent.com/Jacobb13/AISToolkit/dbb3dfff873a758691bc3026c31fcba4c73a9ab9/Hardware/Antenn-DIY/images/20220531_134439.jpg)
-![alt text](https://raw.githubusercontent.com/Jacobb13/AISToolkit/dbb3dfff873a758691bc3026c31fcba4c73a9ab9/Hardware/Antenn-DIY/images/20220531_135106.jpg)
-![alt text](https://raw.githubusercontent.com/Jacobb13/AISToolkit/dbb3dfff873a758691bc3026c31fcba4c73a9ab9/Hardware/Antenn-DIY/images/20220531_135118.jpg)
-![alt text](https://raw.githubusercontent.com/Jacobb13/AISToolkit/main/Hardware/Antenn-DIY/images/img9%23.png)
+![alt text](https://github.com/Jacobb13/AISToolkit/blob/main/Hardware/Antenn-DIY/images/capture1.png)  
+
+![alt text](https://raw.githubusercontent.com/Jacobb13/AISToolkit/main/Hardware/Antenn-DIY/images/img9%23.png)  
 Once the conductors are glued in the pipes, you can now glue the pipes in the T-connector and also the caps on the extremities.   
 
 #### 3.4 Last milestone, the T-Connector 
@@ -86,28 +85,21 @@ As you saw previously, there is going to be a cap on the T-connector to cover bo
 But first, we need to use our third conductor from the 14 gauge copper electrical wire to connect it to the male part of the female N jack panel mount connector. So one conductor welded to the mount connector and the other one welded to the "ground".  
 
 It should look like this : 
-
-![alt text](https://raw.githubusercontent.com/Jacobb13/AISToolkit/dbb3dfff873a758691bc3026c31fcba4c73a9ab9/Hardware/Antenn-DIY/images/20220531_142037.jpg)
-![alt text](https://raw.githubusercontent.com/Jacobb13/AISToolkit/dbb3dfff873a758691bc3026c31fcba4c73a9ab9/Hardware/Antenn-DIY/images/20220531_142042.jpg)
-![alt text](https://raw.githubusercontent.com/Jacobb13/AISToolkit/dbb3dfff873a758691bc3026c31fcba4c73a9ab9/Hardware/Antenn-DIY/images/20220531_142047.jpg)
- Now we can cut a hole in the 2-in cap to fit the female N jack panel mount connector and once in place you need to screw it.  
+![alt text](https://github.com/Jacobb13/AISToolkit/blob/main/Hardware/Antenn-DIY/images/capture2.png)  
+You can cut a hole in the 2-in cap to fit the female N jack panel mount connector and once in place you need to screw it.  
  
-![alt text](https://raw.githubusercontent.com/Jacobb13/AISToolkit/main/Hardware/Antenn-DIY/images/img13.png)
-![alt text](https://raw.githubusercontent.com/Jacobb13/AISToolkit/dbb3dfff873a758691bc3026c31fcba4c73a9ab9/Hardware/Antenn-DIY/images/20220531_143209.jpg)
+![alt text](https://raw.githubusercontent.com/Jacobb13/AISToolkit/main/Hardware/Antenn-DIY/images/img13.png)  
 The inside, should look like this now, but we also added some silicon to prevents the screws from rusting.
-![alt text](https://raw.githubusercontent.com/Jacobb13/AISToolkit/dbb3dfff873a758691bc3026c31fcba4c73a9ab9/Hardware/Antenn-DIY/images/20220531_143214.jpg)
-![alt text](https://raw.githubusercontent.com/Jacobb13/AISToolkit/dbb3dfff873a758691bc3026c31fcba4c73a9ab9/Hardware/Antenn-DIY/images/20220531_143400.jpg)
-Now the conductor going out needs to be nicely separated in two, like this :  
+![alt text](https://github.com/Jacobb13/AISToolkit/blob/main/Hardware/Antenn-DIY/images/capture3.png)  
+The conductor going out needs to be nicely separated in two, like this, and you'll need some heat shrink tubes to insulate them :  
 
-![alt text](https://raw.githubusercontent.com/Jacobb13/AISToolkit/main/Hardware/Antenn-DIY/images/img17%23%23.png)
-And you'll need some heat shrink tubes to insulate them. 
-![alt text](https://raw.githubusercontent.com/Jacobb13/AISToolkit/main/Hardware/Antenn-DIY/images/img18%40%40%40.png)
+![alt text](https://raw.githubusercontent.com/Jacobb13/AISToolkit/main/Hardware/Antenn-DIY/images/capture4.png)  
+You can safely weld them inside our T-connector
+![alt text](https://raw.githubusercontent.com/Jacobb13/AISToolkit/main/Hardware/Antenn-DIY/images/img20.png)  
+Finally, you can close the final cap and glue it but before use sand paper or a knife to scrape the plastic to be sure of having a good adhesion  
 
-Now, you can safely weld them inside our T-connector
-![alt text](https://raw.githubusercontent.com/Jacobb13/AISToolkit/main/Hardware/Antenn-DIY/images/img20.png)
-![alt text](https://raw.githubusercontent.com/Jacobb13/AISToolkit/dbb3dfff873a758691bc3026c31fcba4c73a9ab9/Hardware/Antenn-DIY/images/20220601_091934.jpg)
-Finally, you can close the final cap and glue it(also use a sand paper to be sure of having a good adhesion)  
-AND **TADAAAAAA** !
+Et voilà !
+
 
 ![alt text](https://raw.githubusercontent.com/Jacobb13/AISToolkit/dbb3dfff873a758691bc3026c31fcba4c73a9ab9/Hardware/Antenn-DIY/images/20220601_092050.jpg)
 ![alt text](https://raw.githubusercontent.com/Jacobb13/AISToolkit/main/Hardware/Antenn-DIY/images/img22.png)
