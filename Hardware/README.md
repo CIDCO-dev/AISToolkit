@@ -37,8 +37,7 @@ From the hardware store :
 
 > T for 2 inche pipe for central vacuum
 
-> saw ****
- <img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600"> 
+> Bow saw
  
 ### 3. Steps to build the antenna
 Now that you have all the parts, it's time to build your antenna !  
