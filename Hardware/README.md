@@ -9,7 +9,7 @@ This type of antenna is the simplest to be made from a theoretical point of view
 
 ### 2. Parts list and purposes
 
-Pre-requisite :  
+Prerequisites :  
 
 > Raspberry pi 3 with sd card  
 
@@ -54,7 +54,7 @@ Antenna parts :
 
 ### 3. Steps to build the antenna 
 #### 3.1 Strip off the threads
-First, you need to strip off the electrical copper wire (14 gauge) by taking off the insulator. We only needed to buy a 3 feet wire because by striping it you have now 3 conductor !  
+First, you need to strip off the electrical copper wire (14 gauge) by taking off the insulator. We only needed to buy a 3 feet wire because by striping it you have now 3 conductors !  
 <img src="https://github.com/Jacobb13/AISToolkit/blob/main/Hardware/Antenna/images/2.StrippedCopperWires.png?raw=true" alt="Stripped copper wires"> 
 
 
