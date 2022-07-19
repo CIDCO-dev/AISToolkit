@@ -35,10 +35,16 @@ Prerequisites :
 
 > 4 screws & bolts
 
+> PVC glue
+
+> Hot glue
+
+> Silicone
+
 
 Antenna parts :  
 
-> Cable RG-174
+> Cable RG-174 6-inches
 
 > Electrical coper wire 14 gauge 3 ft
 
@@ -103,10 +109,11 @@ It should look like this :
 You can cut a hole in the 2-in cap to fit the female N jack panel mount connector and once in place you need to screw it.
 <img src="https://github.com/CIDCO-dev/AISToolkit/blob/main/Hardware/Antenna/images/13.Female-N-jack-on-second-cap.jpg" alt="Female N Jack" width="300" height="300">    
 The inside, should look like this now, but we also added some silicon to prevents the screws from rusting.
-<img src="https://github.com/CIDCO-dev/AISToolkit/blob/main/Hardware/Antenna/images/14.Underneath-female-N-Jack-silicone.jpg" alt="underneath the female N Jack" width="400" height="400">
+<img src="https://github.com/CIDCO-dev/AISToolkit/blob/main/Hardware/Antenna/images/14.Underneath-female-N-Jack-silicone.jpg" alt="underneath the female N Jack" width="400" height="400">  
 <img src="https://github.com/CIDCO-dev/AISToolkit/blob/main/Hardware/Antenna/images/15.Underneath-female-N-Jack-more-silicone.jpg" alt="2nd view underneath female N Jack" width="400" height="400">
 
 The conductor going out needs to be nicely separated in two, like this, and you'll need some heat shrink tubes to insulate them :  
+Also, you can use some of the leftover PVC pipe (vacuum pipe) and cut a 2" long tube that you're going to glue to the cap.  
 <img src="https://github.com/CIDCO-dev/AISToolkit/blob/main/Hardware/Antenna/images/16.Conductors-going-out-of-the-female-N-jack.jpg" alt="conductors going out of the female N Jack " width="400" height="400"> <img src="https://github.com/CIDCO-dev/AISToolkit/blob/main/Hardware/Antenna/images/17.Zoom-On-the-conductor-going-out-of-the-female-N-Jack.jpg" alt="Zoom on the conductors goign out of the female n jack" width="400" height="400">  
 You can safely weld them inside your T-connector.  
 <img src="https://github.com/CIDCO-dev/AISToolkit/blob/main/Hardware/Antenna/images/18.Welding-conductors-to-the-T-connector.jpg" alt="Welding of the conductors to the T Connector" width=65% height=65%>  
