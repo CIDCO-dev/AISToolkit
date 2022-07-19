@@ -1,4 +1,6 @@
 # AIS Tool Kit Antenna DIY
+<img src="https://github.com/Jacobb13/AISToolkit/blob/main/Hardware/Antenna/images/1.FullAssembled.png?raw=true" alt="Fully assembled antenna">
+
 ## Building the dipolar antenna
 
 ### 1. First of all, why choosing a dipolar antenna ?
@@ -7,21 +9,17 @@ This type of antenna is the simplest to be made from a theoretical point of view
 
 ### 2. Parts list and purposes
 
-Ordered online : 
+Pre-requisite :  
+
 > Raspberry pi 3 with sd card  
-&nbsp;&nbsp;&nbsp;&nbsp;- The brain of the project. Used to automate the proccess of aquiring data. The software was installed as a service to be launched when booted and is always running.   
 
 > Nooelec NESDR Mini 2+ TCXO RTL-SDR & ADS-B  
 &nbsp;&nbsp;&nbsp;&nbsp;- low-cost wide-band software defined radio.
 
-> Nooelec Lana Module Lana  
+> Nooelec Module Lana  
 &nbsp;&nbsp;&nbsp;&nbsp;- Low noise amplifier (lna)
 
 > Lightning Arrestor N female to N female 
-
-> Female N jack panel mount connector
-
-From the hardware store : 
 
 > cable N male to N male 75 ft
 
@@ -29,7 +27,20 @@ From the hardware store :
 
 > cable SMA male to SMA male 6 in 
 
-> Electrical coper wire 14gauge 3 ft
+> Drill and drilling bits
+
+> Bow saw
+
+> Sand paper
+
+> 4 screws & bolts
+
+
+Antenna parts :  
+
+> Cable RG-174
+
+> Electrical coper wire 14 gauge 3 ft
 
 > 5 ft 2 inche pipe for central vacuum
 
@@ -37,13 +48,11 @@ From the hardware store :
 
 > T for 2 inche pipe for central vacuum
 
-> Bow saw
- 
-### 3. Steps to build the antenna
-Now that you have all the parts, it's time to build your antenna !  
-Here's how it should look at the end :  
- <img src="https://github.com/Jacobb13/AISToolkit/blob/main/Hardware/Antenna/images/1.FullAssembled.png?raw=true" alt="Fully assembled antenna">   
+> Female N jack panel mount connector
 
+
+
+### 3. Steps to build the antenna 
 #### 3.1 Strip off the threads
 First, you need to strip off the electrical copper wire (14 gauge) by taking off the insulator. We only needed to buy a 3 feet wire because by striping it you have now 3 conductor !  
 <img src="https://github.com/Jacobb13/AISToolkit/blob/main/Hardware/Antenna/images/2.StrippedCopperWires.png?raw=true" alt="Stripped copper wires"> 
@@ -78,14 +87,14 @@ The pipes are now ready to contain the conductors, and you'll want them to excee
 
 <img src="https://github.com/Jacobb13/AISToolkit/blob/main/Hardware/Antenna/images/6.MeasuredLenghtOfConductorInShell.jpg?raw=true" alt="Measured lenght of conductors in the shell" width="325" height="350"> <img src="https://github.com/Jacobb13/AISToolkit/blob/main/Hardware/Antenna/images/7.insideViewOfConductorInShell.jpg" alt="Inside view of conductors in the shell" width="325" height="350"> <img src="https://github.com/Jacobb13/AISToolkit/blob/main/Hardware/Antenna/images/8.AnotherInsideView.jpg?raw=true" alt="An additional view of the inside of the shell" width="325" height="350">  
 
-<img src="https://github.com/Jacobb13/AISToolkit/blob/main/Hardware/Antenna/images/9.insideT-connector.jpg" alt="Inside T connector" width="680" height="350">  
+<img src="https://github.com/Jacobb13/AISToolkit/blob/main/Hardware/Antenna/images/9.insideT-connector.jpg" alt="Inside T connector" width=50% height=50%>  
  
 Once the conductors are glued in the pipes, you can now glue the pipes in the T-connector and also the caps on the extremities.   
 
 #### 3.4 Last milestone, the T-Connector 
 
 As you saw previously, there is going to be a cap on the T-connector to cover both conductors, but this cap is going to have on it the female N jack panel mount connector.  
-But first, we need to use our third conductor from the 14 gauge copper electrical wire to connect it to the male part of the female N jack panel mount connector. So one conductor welded to the mount connector and the other one welded to the "ground".  
+But first, we need to use our RG-174 cable to connect it to the male part of the female N jack panel mount connector. So one conductor welded to the mount connector and the other one welded to the "ground".  
 
 It should look like this :  
 <img src="https://github.com/Jacobb13/AISToolkit/blob/main/Hardware/Antenna/images/10.Male-N-jack.jpg" alt="Male N Jack" width="300" height="300">
@@ -100,6 +109,7 @@ The inside, should look like this now, but we also added some silicon to prevent
 The conductor going out needs to be nicely separated in two, like this, and you'll need some heat shrink tubes to insulate them :  
 <img src="https://github.com/Jacobb13/AISToolkit/blob/main/Hardware/Antenna/images/16.Conductors-going-out-of-the-female-N-jack.jpg" alt="conductors going out of the female N Jack " width="400" height="400"> <img src="https://github.com/Jacobb13/AISToolkit/blob/main/Hardware/Antenna/images/17.Zoom-On-the-conductor-going-out-of-the-female-N-Jack.jpg" alt="Zoom on the conductors goign out of the female n jack" width="400" height="400">  
 You can safely weld them inside your T-connector.  
-<img src="https://github.com/Jacobb13/AISToolkit/blob/main/Hardware/Antenna/images/18.Welding-conductors-to-the-T-connector.jpg" alt="Welding of the conductors to the T Connector">  Finally, you can close the final cap and glue it but before use sand paper or a knife to scrape the plastic to be sure of having a good adhesion  
-<img src="https://github.com/Jacobb13/AISToolkit/blob/main/Hardware/Antenna/images/19.Adding-the-cap-to-the-T-connector.jpg" alt="Final product">   
+<img src="https://github.com/Jacobb13/AISToolkit/blob/main/Hardware/Antenna/images/18.Welding-conductors-to-the-T-connector.jpg" alt="Welding of the conductors to the T Connector" width=65% height=65%>  
+Finally, you can close the final cap and glue it but before use sand paper or a knife to scrape the plastic to be sure of having a good adhesion  
+<img src="https://github.com/Jacobb13/AISToolkit/blob/main/Hardware/Antenna/images/19.Adding-the-cap-to-the-T-connector.jpg" alt="Final product" width=65% height=65%>   
 Et voilà !  
